@@ -1,0 +1,58 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+img {
+  max-width: 10%;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.navbar__social {
+  width: 22%;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.title {
+  margin: 0;
+}
+
+.name {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: top;
+  line-height: 1.4;
+  padding: 0 0 0 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+  background-size: 100%;
+  height: 70px;
+  width: 470px;
+}
+/*# sourceMappingURL=style.css.map */
