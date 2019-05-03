@@ -1,19 +1,27 @@
 .hero
   font-family: 'Merriweather'
+  margin-bottom: 150px
   &_block 
     margin-top: 59px
   &-button
+    outline: none
     cursor: pointer
     width: 220px
     height: 50px
     border-radius: 10px
     color: $text-color
     background-color: $button-color
+    border: none
     &:hover
-      background-color: $bgc-color
+      background-color: lighten($button-color, 15%)
+  &:active, button:focus 
+      outline: none
   &-img 
-    width: 10%
+    margin-bottom: 45px
+    max-width: 100%  
     float: right
+  &-text 
+    padding-top: 45px
 .picture
-  width: 100px
-  max-width: 100px
+  width: 650px
+  height: 410px
