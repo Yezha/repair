@@ -48,10 +48,14 @@ body {
   margin-top: 20px;
 }
 
-.navbar__social {
+.navbar-social {
   width: 22%;
   border-radius: 50%;
   margin-left: 5px;
+}
+
+.navbar-social__img {
+  max-width: 20%;
 }
 
 .navbar-title {
@@ -123,8 +127,17 @@ body {
   top: 90%;
 }
 
-.work__picture {
-  height: 1280px;
-  width: 1280px;
+.work-report__picture {
+  height: 128px;
+  width: 100px;
+}
+
+.work-report__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
