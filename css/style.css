@@ -5,6 +5,7 @@
 
 body {
   max-width: 100%;
+  font-family: 'Merriweather', sans-serif;
 }
 
 .container {
@@ -13,26 +14,8 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
-}
-
-body {
-  font-family: 'Merriweather', sans-serif;
-}
-
-.box {
-  background-color: grey;
-  width: 300px;
-  height: 300px;
-  position: relative;
-}
-
-.mini-box {
-  position: absolute;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  background: #000000;
 }
 
 .navbar-block {
@@ -56,6 +39,7 @@ body {
 
 .navbar-social__img {
   max-width: 20%;
+  display: inline-block;
 }
 
 .navbar-title {
@@ -73,6 +57,7 @@ body {
 }
 
 .navbar-avatar {
+  display: inline-block;
   border-radius: 50%;
   background-size: 100%;
   height: 75px;
@@ -119,25 +104,15 @@ body {
 
 .picture {
   width: 650px;
-  height: 410px;
+  height: 325px;
 }
 
-.work-report__text {
-  width: 100%;
-  top: 90%;
+.repost-work__title {
+  text-align: center;
+  font-size: 15px;
 }
 
-.work-report__picture {
-  height: 128px;
-  width: 100px;
-}
-
-.work-report__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.repost-work__subtitle {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
