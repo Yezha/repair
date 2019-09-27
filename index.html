@@ -9,37 +9,53 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $("#navbar").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1200);
+       });
+   });
+   </script>
   <title>Портфолио</title>
 </head>
 <body>
-  <nav class="navbar">
+  <nav id="navbar" class="navbar">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
           <img class="navbar-avatar" src="img/portfolio.jpg" alt="">
           <div class="navbar-name">
-           <h2 class="navbar-title">Ержан Баймен</h2>
+            <h2 class="navbar-title">Ержан Баймен</h2>
            <span class="navbar-subtitle">Разработка сайтов</span>
           </div>
-        <!-- name -->
+          <!-- name -->
         </div>
         <!-- /.navbar__logo -->
-        <div class="navbar-social">
-          <a href="https://vk.com/id231337054">
-            <img class="navbar-social__img" src="img/navbar/vk-logo.svg" alt=""></a>
-          <a href="https://mail.google.com/mail/u/0/#inbox">
-            <img class="navbar-social__img" src="img/navbar/gmail-logo.svg" alt=""></a>
-          <a href="https://www.facebook.com/profile.php?id=100009916298305">
-            <img class="navbar-social__img" src="img/navbar/facebook-logo.svg" alt=""></a>
-        </div>
-        <!-- /.navbar__socia  l -->
+        <ul class="navbar-link">
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-items">Про меня
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#repost" class="navbar-items">Проекты
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-items">Контакты
+            </a>
+          </li>
+        </ul>
       </div>
       <!-- /.navbar-block -->
     </div>
     <!-- /.container -->
   </nav>
   <!-- /.navbar -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="container">
       <div class="hero_block">
         <div class="hero-img">
@@ -59,11 +75,13 @@
    <!-- /.container -->
   </section>
   <!-- /.hero -->
-  <section class="repost">
+  <section id="repost" class="repost">
     <div class="container">
       <div class="repost-work">
+        <div class="repost-work__text">
         <h2 class="repost-work__title">Вот несколько примеров</h2>
-        <p class="repost-work__subtitle">Нажмите на картину, что увидеть работы</p>
+        <p class="repost-work__subtitle">Нажмите на картину, чтобы увидеть работы</p>
+      </div>
       <div class="repost-work__images">
         <div class="repost-work__image">
           <img class="image" src="img/repost-work/project.jpg" alt="Проект №1">
@@ -91,13 +109,21 @@
     <!-- /.container --> 
   </section>
   <!-- /.repost -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="footer-text">
         <h2 class="footer-title">Набирите меня</h2>
-        <p class="footer-subtitle">copyright 2019</p>
+        <p class="footer-subtitle">©Copyright 2019</p>
+        <a href="tel:+77026293257" class="footer-number">8702 629 3257</a>
       </div>
-      
+      <div class="footer-contact">
+        <a href="#" class="footer-contact__link">
+          <img class="footer-contact__image" src="img/footer/facebook-logo.svg" alt="" class="footer-image"></a>
+        <a href="#" class="footer-contact__link">
+          <img class="footer-contact__image" src="img/footer/gmail-logo.svg" alt="" class="footer-image"></a>
+        <a href="#" class="footer-contact__link">
+          <img class="footer-contact__image" src="img/footer/vk-logo.svg" alt="" class="footer-image"></a>
+      </div>
     </div>
     <!-- /.container -->
   </footer>

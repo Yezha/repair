@@ -1,10 +1,22 @@
 .footer 
-  background-color: #32325f
+  background-color: $ftr-color
   width: 100%
   height: 150px
-  &-subtitle
-    text-align: center
-  &-title
-    text-align: center
-    margin: 0
+  &-text
+    display: flex
+    justify-content: space-between
+    align-items: center
     padding-top: 10px  
+  &-number
+    text-decoration: none
+    color: #000
+  &-contact
+    display: flex
+    justify-content: center
+    max-width: 980px
+    flex-wrap: wrap
+    width: 100%
+    &__link
+      flex-basis: 5% 
+    &__image
+      flex-basis: 100%
