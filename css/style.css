@@ -46,6 +46,20 @@ img {
   color: #000;
 }
 
+.navbar-items:after {
+  content: '';
+  display: block;
+  height: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 0%;
+  background-color: #000;
+}
+
+.navbar-items:hover:after {
+  width: 100%;
+}
+
 .navbar-title {
   margin: 0;
 }
@@ -166,18 +180,26 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 980px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  margin: 0;
 }
 
 .footer-contact__link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -ms-flex-preferred-size: 5%;
       flex-basis: 5%;
+  margin-left: auto;
+}
+
+.footer-contact__link:hover {
+  margin-top: 10px;
 }
 
 .footer-contact__image {

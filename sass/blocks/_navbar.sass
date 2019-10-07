@@ -12,6 +12,16 @@
     &s
       text-decoration: none  
       color: #000
+      &:after
+        content: ''
+        display: block
+        height: 10px
+        transition: 0.3s
+        width: 0%
+        background-color: #000
+      &:hover
+        &:after
+          width: 100%
   &-title
     margin: 0
   &-name
