@@ -271,11 +271,13 @@ img {
     text-align: center;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-contact__link {
     text-align: center;
-    margin: 0 150px;
-    padding: 0;
+    margin: 25px 10px;
     width: 50px;
   }
 }
